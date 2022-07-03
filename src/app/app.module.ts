@@ -8,6 +8,14 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SingleProductComponent } from './product-list/single-product/single-product.component';
 import { ProductFormComponent } from './product-list/product-form/product-form.component';
+import { ProductsService } from './services/products.service';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { TopbarComponent } from './layout/topbar/topbar.component';
+import { CategoriesComponent } from './layout/categories/categories.component';
+import { BestSellersComponent } from './product-list/best-sellers/best-sellers.component';
+import { NewArrivalsComponent } from './product-list/new-arrivals/new-arrivals.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +24,20 @@ import { ProductFormComponent } from './product-list/product-form/product-form.c
     SignUpComponent,
     ProductListComponent,
     SingleProductComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavbarComponent,
+    TopbarComponent,
+    CategoriesComponent,
+    BestSellersComponent,
+    NewArrivalsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
