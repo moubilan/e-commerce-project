@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,16 @@ import { TopbarComponent } from './layout/topbar/topbar.component';
 import { CategoriesComponent } from './layout/categories/categories.component';
 import { BestSellersComponent } from './product-list/best-sellers/best-sellers.component';
 import { NewArrivalsComponent } from './product-list/new-arrivals/new-arrivals.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './services/auth.service';
+import { CarouselComponent } from './layout/carousel/carousel.component';
+
+
+const routes : Routes = [
+  { path: '', component: CategoriesComponent},
+  { path: 'login', component: SignInComponent},
+  { path: 'register', component: SignUpComponent}
+]
 
 @NgModule({
   declarations: [
@@ -31,13 +43,18 @@ import { NewArrivalsComponent } from './product-list/new-arrivals/new-arrivals.c
     TopbarComponent,
     CategoriesComponent,
     BestSellersComponent,
-    NewArrivalsComponent
+    NewArrivalsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
+
   ],
-  providers: [ProductsService],
+  providers: [ProductsService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
