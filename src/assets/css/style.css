@@ -218,6 +218,26 @@ th {
   text-align: -webkit-match-parent;
 }
 
+.logo{
+position: absolute;
+width: 285px;
+height: 78px;
+left: 90px;
+top: 70px;
+
+font-family: 'Bungee Inline';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 20px;
+
+background: linear-gradient(90.98deg, #DA3333 24.76%, rgba(86, 160, 100, 0.692708) 49.31%, rgba(49, 76, 172, 0) 104.64%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+/* text-fill-color: transparent; */
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem;

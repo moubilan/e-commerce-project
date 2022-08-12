@@ -26,7 +26,8 @@ import { CarouselComponent } from './layout/carousel/carousel.component';
 const routes : Routes = [
   { path: '', component: CategoriesComponent},
   { path: 'login', component: SignInComponent},
-  { path: 'register', component: SignUpComponent}
+  { path: 'register', component: SignUpComponent},
+  { path: 'shop', component: ProductListComponent}
 ]
 
 @NgModule({
