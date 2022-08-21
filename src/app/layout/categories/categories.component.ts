@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CategoriesService } from 'src/app/services/categories.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class CategoriesComponent implements OnInit {
 
   categories:any;
 
-  constructor(private categoriesService: CategoriesService) { }
+  constructor(private categoriesService: CategoriesService,
+              private router: Router) { }
 
   getCategories(){
     this.categoriesService.CategoryData().subscribe(
@@ -18,6 +20,10 @@ export class CategoriesComponent implements OnInit {
         this.categories = res;
         console.log(this.categories);
       })
+  }
+
+  onViewProducts(id: number){
+    this.router.navigate(['/category', id]);
   }
 
   ngOnInit(): void {

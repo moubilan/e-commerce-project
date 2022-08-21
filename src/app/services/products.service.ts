@@ -12,7 +12,19 @@ export class ProductsService {
     return this.httpClient.get('http://ecommerce.test/api/products')
   }
 
-  getByIdData(id:any){
+  getDataById(id:any){
     return this.httpClient.get('http://ecommerce.test/api/product/'+id)
+  }
+
+  getDataByCategory(id: any){
+    return this.httpClient.get('http://ecommerce.test/api/category/'+id)
+  }
+
+  getNewData(){
+    return this.httpClient.get('http://ecommerce.test/api/new-arrivals')
+  }
+
+  getBestData(){
+    return this.httpClient.get('http://ecommerce.test/api/best-sellers')
   }
 }

@@ -37,7 +37,7 @@ export class AuthService {
   }
 
   signInUser(email: string, password: string){
-    return this.httpClient.post('http://larang.test/api/login', {
+    return this.httpClient.post('http://ecommerce.test/api/login', {
       email: email,
       password: password,
     });
@@ -49,7 +49,7 @@ export class AuthService {
       email: email,
       password: password
     }
-    return this.httpClient.post('http://larang.test/api/register', data);
+    return this.httpClient.post('http://ecommerce.test/api/register', data);
   }
 
   //user Info
@@ -75,7 +75,7 @@ export class AuthService {
     const headers = new HttpHeaders({
       Authorization: `Bearer ${token}`
     });
-    return this.httpClient.post('http://larang.test/api/logout', {allDevice:allDevice}, {headers:headers});
+    return this.httpClient.post('http://ecommerce.test/api/logout', {allDevice:allDevice}, {headers:headers});
   }
 
   
