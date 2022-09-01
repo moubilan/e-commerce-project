@@ -29,6 +29,7 @@ const routes : Routes = [
   { path: 'login', component: SignInComponent},
   { path: 'register', component: SignUpComponent},
   { path: 'shop', component: ProductListComponent},
+  { path: 'shop/:id', component: SingleProductComponent},
   { path: 'category/:id', component: CategoryProductsComponent}
 ]
 
@@ -55,7 +56,7 @@ const routes : Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
 
   ],
   providers: [ProductsService, AuthService],

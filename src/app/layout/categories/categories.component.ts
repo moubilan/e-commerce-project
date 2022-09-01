@@ -22,6 +22,7 @@ export class CategoriesComponent implements OnInit {
       })
   }
 
+  // c'est la meme chose que le routerLink 
   onViewProducts(id: number){
     this.router.navigate(['/category', id]);
   }

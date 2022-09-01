@@ -1,7 +1,7 @@
 <!-- Navbar Start -->
 <div class="container-fluid mb-5">
     <div class="row border-top px-xl-5">
-        <div class="col-lg-3 d-none d-lg-block">
+    <div class="col-lg-3 d-none d-lg-block">
             <!-- <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
                 <h6 class="m-0">Categories</h6>
                 <i class="fa fa-angle-down text-dark"></i>
@@ -27,26 +27,25 @@
                     <a href="" class="nav-item nav-link">Shoes</a>
                 </div>
             </nav> -->
-        </div>
+        </div> 
         <div class="col-lg-9">
             <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                <a href="" class="text-decoration-none d-block d-lg-none">
-                    <h1 class="logo m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">COMET</span>GAMES</h1>                </a>
+                <a routerLink="" class="text-decoration-none d-block d-lg-none"><h3 class="logo m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">COMET</span>GAMES</h3></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a routerLink="" class="nav-item nav-link active">Home</a>
                         <a routerLink="/shop" class="nav-item nav-link">Shop</a>
-                        <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categories</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="cart.html" class="dropdown-item">PS5</a>
-                                <a href="checkout.html" class="dropdown-item">XBOX ONE</a>
-                                <a href="checkout.html" class="dropdown-item">PS4</a>
-                                <a href="checkout.html" class="dropdown-item">Nitendo Switch</a>
+                            <div class="dropdown-menu rounded-0 m-0" (onclick)="onChange()" >
+                                <a routerLink="category/1" class="dropdown-item">Playstation 5</a>
+                                <a routerLink="category/2" class="dropdown-item">Playstation 4</a>
+                                <a routerLink="category/3" class="dropdown-item">Xbox series X</a>
+                                <a routerLink="category/4" class="dropdown-item">Nintendo switch</a>
+                                <!-- <a *ngFor="let cat of categories;" routerLink="category/{{cat.id}}" class="dropdown-item">{{cat.title}}</a> -->
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>

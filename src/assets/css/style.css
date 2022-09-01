@@ -152,13 +152,13 @@ sup {
 }
 
 a {
-  color: #D19C97;
+  color: #F77F00;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #ba6a62;
+  color: #FCBF49;
   text-decoration: underline;
 }
 
@@ -220,8 +220,8 @@ th {
 
 .logo{
 position: absolute;
-width: 285px;
-height: 78px;
+width: 200px;
+height: 22px;
 left: 90px;
 top: 70px;
 
@@ -231,7 +231,7 @@ font-weight: 300;
 font-size: 20px;
 line-height: 20px;
 
-background: linear-gradient(90.98deg, #DA3333 24.76%, rgba(86, 160, 100, 0.692708) 49.31%, rgba(49, 76, 172, 0) 104.64%);
+background: linear-gradient(90.98deg, #D62828 24.76%, rgba(0, 48, 73, 0.693) 49.31%, rgba(230, 219, 219, 0) 104.64%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -2385,8 +2385,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #D19C97;
-  border-color: #D19C97;
+  background-color: #EAE2B7;
+  border-color: #EAE2B7;
 }
 
 .btn-primary:hover {
@@ -4628,8 +4628,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #D19C97;
-  border-color: #D19C97;
+  background-color: #EAE2B7;
+  border-color: #EAE2B7;
 }
 
 .page-item.disabled .page-link {
@@ -6124,13 +6124,13 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #EDF1FF !important;
+  background-color: #EAE2B7 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #bac9ff !important;
+  background-color: #EAE2B7 !important;
 }
 
 .bg-success {
@@ -9284,11 +9284,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #D19C97 !important;
+  color: #F77F00 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #ba6a62 !important;
+  color: #EDF1FF !important;
 }
 
 .text-secondary {
@@ -9296,7 +9296,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #a1b6ff !important;
+  color: #FCBF49 !important;
 }
 
 .text-success {
@@ -9496,7 +9496,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #D19C97;
+  color: #F77F00;
 }
 
 @media (max-width: 991.98px) {
